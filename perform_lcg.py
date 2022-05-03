@@ -12,7 +12,7 @@ def list_to_csv(lst):
         wr.writerow(lst)
 
 m = lcg(mod=13, a=1, c=5, x_0=1, n=2**20)
-plt.hist(m,bins=13,color='steelblue' ,edgecolor='black', linewidth=1.2)
+plt.hist(m,bins=13,color='steelblue' ,edgecolor='black', linewidth=1.2, rwidth=0.85)
 plt.title("LCG(mod=13,a=1,c=5,x_0=1)")
 plt.show()
 print(len(m))
