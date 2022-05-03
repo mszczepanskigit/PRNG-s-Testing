@@ -1,4 +1,4 @@
-def bit_to_int(binary):
+def bin_to_int(binary):
     int_val, i, n = 0, 0, 0
     while binary != 0:
         a = binary % 10
@@ -9,4 +9,4 @@ def bit_to_int(binary):
 
 
 if __name__ == "__main__":
-    print(bit_to_int(10101))
+    print(bin_to_int(10101))
