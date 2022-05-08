@@ -11,6 +11,7 @@ def lcg(mod, a, c, x_0, n):
     x = [x_0]
     for i in range(1, n):
         x.append((a * x[i-1] + c) % mod)
+        print((a * x[i-1] + c) % mod)
     return x
 
 

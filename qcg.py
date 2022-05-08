@@ -17,4 +17,4 @@ def qcg(x_0, n, a, b, c, m=32):
 
 
 if __name__ == "__main__":
-    print(qcg(x_0=3, n=10, a=2, b=3, c=1, m=32))
+    print(qcg(x_0=3, n=10, a=2, b=3, c=0, m=32))

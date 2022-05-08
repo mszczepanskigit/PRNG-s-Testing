@@ -1,4 +1,6 @@
+import random
 import random as rand
+import matplotlib.pyplot as plt
 
 
 def rc4(K: list, n, m=32):
@@ -27,4 +29,5 @@ def rc4(K: list, n, m=32):
 
 
 if __name__ == "__main__":
-    print(rc4(m=32, K=[12], n=10))
+    x = rc4(m=32, K=[random.randint(a=0, b=31) for _ in range(17)], n=10000)
+    print(x)

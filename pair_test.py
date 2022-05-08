@@ -31,10 +31,10 @@ def pair_test(lst):
             else:
                 matrix_of_values[i].append(0)
     observable_sum = []
-    for y in matrix:
-        print(y)
+    """for y in matrix:
+        print(y)"""
     for y in matrix_of_values:
-        print(y)
+        # print(y)
         observable_sum.append(sum(y))
     p_val = chi2_test(obs=observable_sum, exp=[(len(lst) - 1) / len(matrix)] * len(matrix))
     return p_val
@@ -43,4 +43,10 @@ def pair_test(lst):
 if __name__ == "__main__":
     # pair_test(qcg(m=11, a=1, b=2, c=3, x_0=7, n=100))
     # pair_test(lcg(mod=13, a=2, c=5, x_0=1, n=1000))
-    pass
+    from vb import vb
+    from lcg import lcg
+    from glcg import glcg
+    from mt import mt
+    from rc4 import rc4
+
+    print(pair_test(glcg(mod=2**10, x_0=[1, 1, 1], n=2**16, coeffs=[3, 7, 68])))

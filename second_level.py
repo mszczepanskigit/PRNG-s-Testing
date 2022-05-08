@@ -19,4 +19,3 @@ def sec_l_test(p_wartosci):
     stat = sum(((o-e) ** 2)/e)
     p_final = chi2.sf(stat, s-1)
     return p_final
-

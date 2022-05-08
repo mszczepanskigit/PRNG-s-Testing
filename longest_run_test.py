@@ -48,7 +48,7 @@ def longest_runs_test(bin_data):
     for i in range(len(frequencies)):
         chi_squared += (pow(frequencies[i] - (num_blocks * pik_values[i]), 2.0)) / (num_blocks * pik_values[i])
     p_val = spc.gammaincc(float(k / 2), float(chi_squared / 2))
-    print(f"Statistic: {chi_squared}\nP-value: {p_val}")
+    #print(f"Statistic: {chi_squared}\nP-value: {p_val}")
     return p_val, chi_squared
 
 
